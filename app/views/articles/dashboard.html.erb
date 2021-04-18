@@ -1,0 +1,6 @@
+<%= form_with(url: ac_path, model: @article, local: true) do |f| %>
+    <%= f.text_field :title, placeholder: 'escriba el titulo' %>
+    <%= f.text_field :image, placeholder: 'ingrese la url de la imagen' %>
+    <%= f.text_field :content, placeholder: 'escriba el contenido' %>
+    <%= f.submit 'guardar' %>
+<% end %>

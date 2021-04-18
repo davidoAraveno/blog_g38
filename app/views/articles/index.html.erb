@@ -1,0 +1,15 @@
+<% @articles.each do |i| %>
+    <ul>
+       <li>titulo: <%= i.title %> </li>
+       <li> <div style="background: url(<%= i.image %>); width: 100px; height: 100px; background-size: cover; background-position: center;"> </div>  </li>
+       <li> contenido: <%= i.content %> </li>
+       <li> fecha de ingreso: <%= i.created_at %></li>
+    </ul>
+<% end %>
+
+<h3> Ingresa como administrador para publicar (para entrar siempre debes autenticarte) </h3>
+<%= form_with(url: dash_post_path, model: @user, local:true) do |f| %>
+    <%= f.text_field :name, placeholder: 'escriba su nombre' %>
+    <%= f.password_field :password, placeholder: 'escriba su contraseña' %>
+    <%= f.submit 'ir'%>
+<% end %>
