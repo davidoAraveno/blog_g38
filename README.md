@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://sheltered-temple-96171.herokuapp.com/
+APLICACION EN HEROKU
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+PARA AUTENTICARSE COMO ADMINISTRADOR: nombre: john do, contraseña: john do (nombre y contraseña con espacio vacio incluido)
